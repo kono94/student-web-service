@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="lwenstrom.net/ws/students"
+           targetNamespace="lwenstrom.net/ws/students"
+           elementFormDefault="qualified">
+
+    <xs:element name="getStudentRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="studentID" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getStudentResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="tns:student"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="student">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="surname" type="xs:string"/>
+            <xs:element name="studentID" type="xs:int"/>
+            <xs:element name="avgScore" type="xs:double"/>
+            <xs:element name="birthday" type="xs:date"/>
+            <xs:element name="iban" type="xs:string" />
+            <xs:element name="street" type="xs:string" />
+            <xs:element name="plz" type="xs:int" />
+            <xs:element name="city" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
