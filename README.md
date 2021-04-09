@@ -1,7 +1,7 @@
 ## API
 ##### Postman
 * Method: `Post`
-* URL: `localhost:6666/ws`
+* URL: `localhost:8089/ws`
 * Header: ``content-type: application/soap+xml;charset=utf-8``
 * Body:
 ````xml
@@ -28,7 +28,7 @@ curl --header "content-type: application/soap+xml;charset=utf-8" -d '<?xml versi
            <gs:studentID>34937</gs:studentID>
         </gs:getStudentRequest>
      </soapenv:Body>
-  </soapenv:Envelope>' http://localhost:6666/ws
+  </soapenv:Envelope>' http://localhost:8089/ws
 ````
   
  
@@ -40,12 +40,12 @@ curl --header "content-type: application/soap+xml;charset=utf-8" -d '<?xml versi
 	<ns2:getStudentResponse xmlns:ns2="lwenstrom.net/ws/students">
 		<ns2:student>
 			<ns2:name>Jan</ns2:name>
-			<ns2:surname>Löwenstrom</ns2:surname>
+			<ns2:surname>Lï¿½wenstrom</ns2:surname>
 			<ns2:studentID>34937</ns2:studentID>
 			<ns2:avgScore>1.18</ns2:avgScore>
 			<ns2:birthday>1994-01-25</ns2:birthday>
 			<ns2:iban>DE59 1000 000 0323 1022</ns2:iban>
-			<ns2:street>Mundsburger Straße 233</ns2:street>
+			<ns2:street>Mundsburger Straï¿½e 233</ns2:street>
 			<ns2:plz>24754</ns2:plz>
 			<ns2:city>Hamburg</ns2:city>
 		</ns2:student>

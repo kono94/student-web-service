@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+
+<title>Begrüßungsgeldantrag</title>
+<body style="padding:30px">
+
+<h1>Begrüßungsgeldantrag stellen</h1>
+
+<p>Bitte gib hier deine Matrikelnummer ein, um einen neuen Antrag zu stellen.
+</p>
+<br>
+<form action="/api/submit" method="post">
+    <label for="fstudentID">Matrikelnummer:</label>
+    <input type="number" id="fstudentID" name="studentID"><br><br>
+    <input type="submit" value="Antrag stellen">
+</form>
+<br>
+<p>
+    Anschließend bekommst du eine E-Mail mit einem Aktivierungslink zugesendet.
+    Folge den weiteren Anweisungen.</p>
+
+</body>
+</html>
