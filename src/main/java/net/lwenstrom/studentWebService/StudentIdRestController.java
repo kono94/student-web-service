@@ -25,7 +25,7 @@ public class StudentIdRestController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        final String baseUrl = "http://localhost:8080/engine-rest/process-definition/key/student-money/start";
+        final String baseUrl = "http://host.docker.internal:8080/engine-rest/process-definition/key/student-money/start";
         HttpEntity<String> entity = new HttpEntity<>(jsonBody, headers);
         restTemplate.exchange(baseUrl, HttpMethod.POST, entity, String.class);
 
@@ -43,7 +43,7 @@ public class StudentIdRestController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        final String baseUrl = "http://localhost:8080/engine-rest/message";
+        final String baseUrl = "http://host.docker.internal:8080/engine-rest/message";
         HttpEntity<String> entity = new HttpEntity<>(jsonBody, headers);
         restTemplate.exchange(baseUrl, HttpMethod.POST, entity, String.class);
         return "Aktivierungslink geklickt. Wir werden den Antrag als PDF erzeugen und dir per E-Mail senden!";
