@@ -1,3 +1,8 @@
+## Docker Build
+docker build -t kono94/spring-student-soap-service .
+docker run --name soap-service -p 8089:8089 -d  kono94/spring-student-soap-service
+
+
 ## API
 ##### Postman
 * Method: `Post`

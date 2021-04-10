@@ -18,7 +18,7 @@ public class StudentRepository {
     public void initData() throws DatatypeConfigurationException {
         Student jan = new Student();
         jan.setName("Jan");
-        jan.setSurname("Löwenstrom");
+        jan.setSurname("Loewenstrom");
         jan.setStudentID(34937);
         jan.setAvgScore(1.18);
         jan.setBirthday(
@@ -26,7 +26,7 @@ public class StudentRepository {
 );
         jan.setIban("DE59 1000 000 0323 1022");
         jan.setPlz(24754);
-        jan.setStreet("Mundsburger Straße 233");
+        jan.setStreet("Mundsburger Strasse 233");
         jan.setCity("Hamburg");
 
         students.put(jan.getStudentID(), jan);
@@ -41,7 +41,7 @@ public class StudentRepository {
         );
         rixta.setIban("DE38 3999 0000 1002 3425") ;
         rixta.setPlz(63065);
-        rixta.setStreet("Sesamstraße 502");
+        rixta.setStreet("Sesamstrasse 502");
         rixta.setCity("Offenbach");
         students.put(rixta.getStudentID(), rixta);
 
@@ -56,8 +56,8 @@ public class StudentRepository {
         );
         kristin.setIban("DE22 2041 0000 2220 8541");
         kristin.setPlz(80331);
-        kristin.setStreet("Turmstraße 69");
-        kristin.setCity("München");
+        kristin.setStreet("Turmstrasse 69");
+        kristin.setCity("Muenchen");
         students.put(kristin.getStudentID(), kristin);
 
     }
